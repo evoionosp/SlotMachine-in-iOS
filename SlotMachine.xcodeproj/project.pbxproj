@@ -12,6 +12,7 @@
 		527D1D8321EE5DA3008951D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527D1D8121EE5DA3008951D2 /* Main.storyboard */; };
 		527D1D8521EE5DA3008951D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 527D1D8421EE5DA3008951D2 /* Assets.xcassets */; };
 		527D1D8821EE5DA3008951D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 527D1D8621EE5DA3008951D2 /* LaunchScreen.storyboard */; };
+		527D1D9021EE63D9008951D2 /* SlotMachine.png in Resources */ = {isa = PBXBuildFile; fileRef = 527D1D8F21EE63D9008951D2 /* SlotMachine.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		527D1D8421EE5DA3008951D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		527D1D8721EE5DA3008951D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		527D1D8921EE5DA3008951D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		527D1D8F21EE63D9008951D2 /* SlotMachine.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SlotMachine.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				527D1D7F21EE5DA3008951D2 /* ViewController.swift */,
 				527D1D8121EE5DA3008951D2 /* Main.storyboard */,
 				527D1D8421EE5DA3008951D2 /* Assets.xcassets */,
+				527D1D8F21EE63D9008951D2 /* SlotMachine.png */,
 				527D1D8621EE5DA3008951D2 /* LaunchScreen.storyboard */,
 				527D1D8921EE5DA3008951D2 /* Info.plist */,
 			);
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				527D1D8821EE5DA3008951D2 /* LaunchScreen.storyboard in Resources */,
+				527D1D9021EE63D9008951D2 /* SlotMachine.png in Resources */,
 				527D1D8521EE5DA3008951D2 /* Assets.xcassets in Resources */,
 				527D1D8321EE5DA3008951D2 /* Main.storyboard in Resources */,
 			);
