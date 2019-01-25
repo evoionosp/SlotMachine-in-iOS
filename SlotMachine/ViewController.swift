@@ -33,9 +33,10 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIPickerVi
     
     @IBAction func buttonClicked(sender: AnyObject) {
         
-        if (credit >= 10){
-        credit -= 10
-        spent += 10
+        let bet = sender.tag
+        if (credit >= bet!){
+            credit -= bet!
+            spent += bet!
         pickerView.selectRow(Int(arc4random_uniform(1000))%94 + 3, inComponent: 0, animated: true)
         pickerView.selectRow(Int(arc4random_uniform(1000))%94 + 3, inComponent: 1, animated: true)
         pickerView.selectRow(Int(arc4random_uniform(1000))%94 + 3, inComponent: 2, animated: true)
@@ -62,7 +63,7 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIPickerVi
                 self.credit += 100
             }))
             alert.addAction(UIAlertAction(title: "No", style: .destructive, handler: { action in
-                exit(0)
+               // exit(0)
             }))
             
             self.present(alert, animated: true)
@@ -133,8 +134,8 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIPickerVi
     }
     
     func updateLabel() {
-        creditLabel.text = credit.description
-        wonLabel.text = won.description
+        creditLabel.text = "$ "+credit.description
+        wonLabel.text = "$ "+won.description
         let jamt = 500 + spent*2
         let any2amt = 50 + spent/5
         jackpot.text = "$ "+jamt.description
