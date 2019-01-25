@@ -45,14 +45,14 @@ class ViewController: UIViewController,UINavigationControllerDelegate,UIPickerVi
         
         if(dataArray1[pickerView.selectedRow(inComponent: 0)] == dataArray2[pickerView.selectedRow(inComponent: 1)] && dataArray2[pickerView.selectedRow(inComponent: 1)] == dataArray3[pickerView.selectedRow(inComponent: 2)]) {
             credit += (500 + spent*2)
-            spent = 0;
             won += (500 + spent*2)
             print("Won: "+won.description)
+            spent = 0;
         } else if(dataArray1[pickerView.selectedRow(inComponent: 0)] == dataArray2[pickerView.selectedRow(inComponent: 1)] || dataArray2[pickerView.selectedRow(inComponent: 1)] == dataArray3[pickerView.selectedRow(inComponent: 2)] || dataArray3[pickerView.selectedRow(inComponent: 2)] == dataArray1[pickerView.selectedRow(inComponent: 0)]) {
             credit += (50 + spent/5)
-            spent = 0;
             won += (50 + spent/5)
             print("Won: "+won.description)
+            spent = 0;
         }
         
         updateLabel()
